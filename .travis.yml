@@ -27,8 +27,8 @@ deploy:
   region: 'us-east-1'
   app: 'multi-docker'
   env: 'Multidocker-env'
-  bucket_name: 'elasticbeanstalk-us-east-1-114047053983'
-  bucket_path: 'multi-docker'
+  bucket_name: 'elasticbeanstalk-us-east-1-114047053983' # the S3 bucket where you will put your Dockerrun.aws.json file
+  bucket_path: 'multi-docker' # The folder name where you will put your file. (This folder doesn't exist before the first deployment)
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
